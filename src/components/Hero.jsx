@@ -42,10 +42,10 @@ const Hero = () => {
   return (
     <section id="hero">
       <div id="hero-container">
-        <img src="/images/footer-right-leaf.png" alt="leaf-top" className='leaf-top'/>
-        <img src="/images/hero-right-leaf.png" alt="leaf-right" className='leaf-right lvs'/>
-        <img src="/images/hero-left-leaf.png" alt="leaf" className='leaf lvs'/>
-        <img src="/images/drink1.png" className="drink" alt="drink"/>
+        <img src="../images/footer-right-leaf.png" alt="leaf-top" className='leaf-top'/>
+        <img src="../images/hero-right-leaf.png" alt="leaf-right" className='leaf-right lvs'/>
+        <img src="../images/hero-left-leaf.png" alt="leaf" className='leaf lvs'/>
+        <img src="../images/drink1.png" className="drink" alt="drink"/>
         <h1 className="heroText">Fresh</h1>
       </div>
     </section>
