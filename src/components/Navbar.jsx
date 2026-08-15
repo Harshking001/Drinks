@@ -2,9 +2,10 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='flex-container h-[100vh]'>
-      
-    </div>
+    <nav>
+      <div>
+      </div>
+    </nav>
   )
 }
 
