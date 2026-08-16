@@ -11,7 +11,7 @@ const Drinks = () => {
           <h1>Juice</h1>
         </div>
         <div className='drink'>
-          <img src="/Drinks/images/drink1.png" alt="leaf" className='img'/>
+          <img src="/Drinks/images/drink3.png" alt="leaf" className='img'/>
           <h1>Mango</h1>
         </div>     
     </section>

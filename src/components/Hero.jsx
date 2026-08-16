@@ -9,17 +9,6 @@ const Hero = () => {
     useGSAP(() => {
         let mm = gsap.matchMedia();
 
-        let split = SplitText.create('.heroText',{
-            type: 'chars'
-        })
-
-        gsap.from(split.chars,{
-            y: 100,
-            opacity: 0,
-            duration: 1,
-            stagger: 0.2,
-        })
-
         let tl = gsap.timeline()
 
         gsap.to('.lvs', {
@@ -46,19 +35,6 @@ const Hero = () => {
                 }
             })
        }) 
-    //    mm.add("(max-width: 590px)",()=>{
-    //     tl.to('.drink-img',{
-    //         scale: 0.6,
-    //         y: 1100,
-    //         scrollTrigger: {
-    //             trigger: '#hero',
-    //             pin: true,
-    //             scrub: 1,
-    //             start: 'bottom center',
-    //             pinSpacing: false,
-    //         }
-    //     })
-    //    })
 
     mm.add("(max-width: 590px)",()=>{
             gsap.to('.drink-img',{
@@ -73,16 +49,22 @@ const Hero = () => {
                 }
             })
        }) 
+
+       gsap.from(".fresh",{
+        scale: 5,
+        duration: 1,
+        zIndex: 1,
+       })
        
     })
   return (
     <section id="hero">
       <div id="hero-container">
+        <img className='fresh' src="/Drinks/images/fav.png" alt="fresh" />
         <img src="/Drinks/images/footer-right-leaf.png" alt="leaf-top" className='leaf-top'/>
         <img src="/Drinks/images/hero-right-leaf.png" alt="leaf-right" className='leaf-right lvs'/>
         <img src="/Drinks/images/hero-left-leaf.png" alt="leaf" className='leaf lvs'/>
         <img src="/Drinks/images/drink1.png" className="drink-img" alt="drink"/>
-        <h1 className="heroText">Fresh</h1>
       </div>
     </section>
   )
