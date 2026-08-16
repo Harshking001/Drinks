@@ -27,9 +27,11 @@ const Hero = () => {
                 scrub: 1,
             }
         })
-        tl.to('.drink',{
+        tl.to('.drink-img',{
             scale: 0.4,
-            yPercent: 100,
+            yPercent: 85,
+            rotate: -360,
+            // zIndex: 2,
             scrollTrigger: {
                 trigger: '#hero',
                 start: 'bottom center', 
@@ -45,7 +47,7 @@ const Hero = () => {
         <img src="/Drinks/images/footer-right-leaf.png" alt="leaf-top" className='leaf-top'/>
         <img src="/Drinks/images/hero-right-leaf.png" alt="leaf-right" className='leaf-right lvs'/>
         <img src="/Drinks/images/hero-left-leaf.png" alt="leaf" className='leaf lvs'/>
-        <img src="/Drinks/images/drink1.png" className="drink" alt="drink"/>
+        <img src="/Drinks/images/drink1.png" className="drink-img" alt="drink"/>
         <h1 className="heroText">Fresh</h1>
       </div>
     </section>
