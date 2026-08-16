@@ -7,15 +7,19 @@ import { ScrollTrigger } from 'gsap/all';
 const Hero = () => {
 
     useGSAP(() => {
+        let mm = gsap.matchMedia();
+
         let split = SplitText.create('.heroText',{
             type: 'chars'
         })
+
         gsap.from(split.chars,{
             y: 100,
             opacity: 0,
             duration: 1,
             stagger: 0.2,
         })
+
         let tl = gsap.timeline()
 
         gsap.to('.lvs', {
@@ -27,19 +31,49 @@ const Hero = () => {
                 scrub: 1,
             }
         })
-        tl.to('.drink-img',{
-            scale: 0.4,
-            yPercent: 85,
-            rotate: -360,
-            // zIndex: 2,
-            scrollTrigger: {
-                trigger: '#hero',
-                start: 'bottom center', 
-                // pin: true,
-                scrub: 1,
-                pinSpacing: false,
-            }
-        })
+       mm.add("(min-width: 591px)",()=>{
+            tl.to('.drink-img',{
+                scale: 0.4,
+                yPercent: 85,
+                rotate: -360,
+                // zIndex: 2,
+                scrollTrigger: {
+                    trigger: '#hero',
+                    start: 'bottom center', 
+                    // pin: true,
+                    scrub: 1,
+                    pinSpacing: false,
+                }
+            })
+       }) 
+    //    mm.add("(max-width: 590px)",()=>{
+    //     tl.to('.drink-img',{
+    //         scale: 0.6,
+    //         y: 1100,
+    //         scrollTrigger: {
+    //             trigger: '#hero',
+    //             pin: true,
+    //             scrub: 1,
+    //             start: 'bottom center',
+    //             pinSpacing: false,
+    //         }
+    //     })
+    //    })
+
+    mm.add("(max-width: 590px)",()=>{
+            gsap.to('.drink-img',{
+                scale: 0.8,
+                yPercent: 160,
+                rotate: -360,
+                scrollTrigger: {
+                    trigger: '#hero',
+                    start: 'bottom center', 
+                    scrub: 1,
+                    // pinSpacing: false,
+                }
+            })
+       }) 
+       
     })
   return (
     <section id="hero">
