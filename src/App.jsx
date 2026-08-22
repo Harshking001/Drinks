@@ -8,6 +8,7 @@ import Drinks from './components/Drinks';
 import Cursor from './components/Cursor';
 import About from './components/About';
 import Contact from './components/Contact';
+import Mask from './components/Mask';
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
       <Navbar />
       <Hero />
       <Drinks />
-      <About />
+      <About />  
+      <Mask />
       <Contact />
     </main>
   )
