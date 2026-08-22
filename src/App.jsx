@@ -6,7 +6,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Drinks from './components/Drinks';
 import Cursor from './components/Cursor';
-import Delivery from './components/Delivery';
+import About from './components/About';
+import Contact from './components/Contact';
 
 const App = () => {
   return (
@@ -15,7 +16,8 @@ const App = () => {
       <Navbar />
       <Hero />
       <Drinks />
-      {/* <Delivery /> */}
+      <About />
+      <Contact />
     </main>
   )
 }
