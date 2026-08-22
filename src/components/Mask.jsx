@@ -6,7 +6,7 @@ const Mask = () => {
 
     useGSAP(()=>{
         gsap.to('#mask',{
-            maskSize: 2600,
+            maskSize: 4000,
             scrollTrigger: {
                 trigger: '#mask',
                 pin: true,

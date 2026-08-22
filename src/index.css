@@ -226,4 +226,7 @@ nav{
             margin: 70px 30px;
         }
     }
+    #about .about .about-img{
+        height: 50%;
+    }
 }
