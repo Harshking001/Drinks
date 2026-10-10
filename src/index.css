@@ -8,6 +8,7 @@
     --color-text: rgb(192, 190, 190);
     --color-cursor: rgba(34, 241, 197, 0.514);
     --color-drink:  linear-gradient(45deg, rgb(5, 5, 5), rgb(5, 161, 148));
+    --color-contact: linear-gradient(45deg, green,red);
 }
 *{
     padding: 0;
@@ -28,6 +29,7 @@ html, body{
     h1{
         font-size: 400%;
         text-shadow: 2px 2px 5px rgb(253, 82, 3);
+        text-decoration: underline;
     }
 }
 
@@ -100,6 +102,7 @@ nav{
             position: absolute;
             width: 80%;
             height: 100%;
+            pointer-events: none;
         }
         .leaf{
             position: absolute;
@@ -170,23 +173,23 @@ nav{
 #about{
     width: 100%;
     height: 100vh;
-    text-decoration: underline;
-
 
     .about{
         display: flex;
         /* justify-content: center; */
         align-items: center;
         height: 100%;
+        width: 100%;
         position: relative;
         .about-img{
-            height: 70%;
-            width: 60%;
+            height: 60%;
+            width: 50%;
             margin: 15px;
             position: absolute;
             padding: 15px;
             background: rgba(255, 255, 255, 0.712);
             border-radius: 30px;
+            top: 0;
 
 
             img{
@@ -212,6 +215,70 @@ nav{
     }
 }
 
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+    /* max-height: 100vh; */
+
+    #contact-img{
+        width: 100%;
+        height: 500px;
+    }
+
+    .contact{
+        position: absolute;
+        max-height: 500px;
+        height: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        backdrop-filter: blur(40px);
+        border-radius: 20px;
+        border: 1px solid;
+        max-width: 400px;
+        width: 80%;
+        flex-direction: column;
+
+        #input{
+            background: var(--color-text);
+            margin: 20px 0;
+            padding: 10px;
+            width: 80%;
+            border-radius: 10px;
+            height: 50px;
+            input,textarea{
+              background: var(--color-bg);
+              width: 100%;
+              resize: none;
+              height: 100%;
+              border-radius: 5px;
+              padding: 10px;
+            }
+
+            textarea{
+                height: 120px;
+            }
+        }
+
+        #button{
+            background: rgba(238, 156, 5, 0.884);
+            width: 80%;
+            padding: 10px;
+            border-radius: 10px;
+            color: var(--color-bg);
+            transition: background 0.5s ease-in;
+        }
+
+        #button:hover{
+            background: rgb(255, 176, 30);
+        }
+    }
+}
+
 @media (max-width: 700px){
     body{
         font-size: 0.5rem;
@@ -227,6 +294,7 @@ nav{
         }
     }
     #about .about .about-img{
-        height: 50%;
+        height: 60%;
+        width: 90%;
     }
 }

@@ -1,6 +1,5 @@
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import React from 'react'
 
 const About = () => {
   useGSAP(()=>{
@@ -17,7 +16,6 @@ const About = () => {
     
     scrollTrigger: {
       trigger: '#about',
-      // start: 'center center', 
       scrub: true,  
       pin:"#about",
     }
