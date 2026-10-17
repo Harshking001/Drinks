@@ -20,7 +20,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <h1>Lets Connect</h1>
-      <img id="contact-img"src="/Drinks/images/footer-drinks.png" alt="image" />
+      <img id="contact-img"src="/images/footer-drinks.png" alt="image" />
       <div className="contact">
           <div id="input"><input type="text" placeholder='Your Name'/></div>
           <div id="input"><textarea name="massage" placeholder='Write Massage...'></textarea></div>
