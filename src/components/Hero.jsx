@@ -60,11 +60,11 @@ const Hero = () => {
   return (
     <section id="hero">
       <div id="hero-container">
-        <img className='fresh' src="/Drinks/images/fav.png" alt="fresh" />
-        <img src="/Drinks/images/footer-right-leaf.png" alt="leaf-top" className='leaf-top'/>
-        <img src="/Drinks/images/hero-right-leaf.png" alt="leaf-right" className='leaf-right lvs'/>
-        <img src="/Drinks/images/hero-left-leaf.png" alt="leaf" className='leaf lvs'/>
-        <img src="/Drinks/images/drink1.png" className="drink-img" alt="drink"/>
+        <img className='fresh' src="/images/fav.png" alt="fresh" />
+        <img src="/images/footer-right-leaf.png" alt="leaf-top" className='leaf-top'/>
+        <img src="/images/hero-right-leaf.png" alt="leaf-right" className='leaf-right lvs'/>
+        <img src="/images/hero-left-leaf.png" alt="leaf" className='leaf lvs'/>
+        <img src="/images/drink1.png" className="drink-img" alt="drink"/>
       </div>
     </section>
   )
