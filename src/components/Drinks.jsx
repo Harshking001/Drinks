@@ -4,14 +4,14 @@ const Drinks = () => {
   return (
     <section id="drinks">
         <div className='drink'>
-          <img src="/Drinks/images/drink4.png" alt="leaf-top" className='img'/>
+          <img src="/images/drink4.png" alt="leaf-top" className='img'/>
           <h1>Orage</h1>
         </div>
         <div className='drink'>
           <h1>Juice</h1>
         </div>
         <div className='drink'>
-          <img src="/Drinks/images/drink3.png" alt="leaf" className='img'/>
+          <img src="/images/drink3.png" alt="leaf" className='img'/>
           <h1>Mango</h1>
         </div>     
     </section>
