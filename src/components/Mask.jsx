@@ -16,7 +16,7 @@ const Mask = () => {
     },[])
   return (
     <section id="mask">
-      <img src="/Drinks/images/under-img.jpg" alt="image" />
+      <img src="/images/under-img.jpg" alt="image" />
     </section>
   )
 }
