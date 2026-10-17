@@ -25,11 +25,11 @@ const About = () => {
     <section id="about">
       <h1>About</h1>
       <div className='about'>
-        <div className='about-img'><img src="/Drinks/images/abt1.png" alt="about" /></div>
-        <div className='about-img'><img src="/Drinks/images/abt2.png" alt="about" /></div>
-        <div className='about-img'><img src="/Drinks/images/abt3.png" alt="about" /></div>
-        <div className='about-img'><img src="/Drinks/images/abt4.png" alt="about" /></div>
-        <div className='about-img'><img src="/Drinks/images/abt5.png" alt="about" /></div>
+        <div className='about-img'><img src="//images/abt1.png" alt="about" /></div>
+        <div className='about-img'><img src="//images/abt2.png" alt="about" /></div>
+        <div className='about-img'><img src="/images/abt3.png" alt="about" /></div>
+        <div className='about-img'><img src="/images/abt4.png" alt="about" /></div>
+        <div className='about-img'><img src="/images/abt5.png" alt="about" /></div>
       </div>
     </section>
   )
